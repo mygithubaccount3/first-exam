@@ -1,0 +1,135 @@
+@font-face {
+  font-family: "Aleo";
+  src: url("/fonts/aleo-regular-webfont.eot");
+  src: url('/fonts/aleo-regular-webfont.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/aleo-regular-webfont.woff2') format('woff2'),
+  url('/fonts/aleo-regular-webfont.woff') format('woff'),
+  url('/fonts/aleo-regular-webfont.ttf') format('truetype'),
+  url('/fonts/aleo-regular-webfont.svg#Aleo Regular') format('svg');
+}
+
+::placeholder {
+  color: #999999;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 2.8px;
+}
+
+body {
+  margin: 0;
+}
+
+.header {
+  background: url("../images/header.png");
+  padding-top: 265px;
+  /*padding-bottom: 110px;*/
+  background-size: auto;
+
+  &__title {
+    color: #ffffff;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4.8px;
+  }
+
+  &__tagline {
+    color: #ffffff;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 6.82px;
+    text-align: center;
+  }
+
+  &__search {
+    margin: auto;
+    width: 49%;
+  }
+
+  &__input {
+    border: none;
+    line-height: 1.5;
+    padding: 6px;
+    width: 77%;
+  }
+
+  &__submit {
+    background-color: #5474fd;;
+    border: none;
+    color: white;
+    padding: 4.2px;
+  }
+
+  &__btn-title {
+    font-family: Aleo, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+  }
+
+  &__scroll {
+    color: white;
+    display: block;
+    margin: auto;
+    margin-top: 120px;
+    margin-bottom: 135px;
+    text-align: center;
+    text-decoration: none;
+    width: 20%;
+
+    &::after {
+      display: block;
+      margin-top: 15px;
+      content: "^";
+      color: white;
+      text-align: center;
+      transform: rotate(180deg);
+    }
+  }
+
+  .nav {
+    background-color: #5474fd;
+    display: flex;
+    justify-content: space-around;
+
+    &__title {
+      color: white;
+      display: inline-block;
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 26px;
+      text-transform: uppercase;
+      letter-spacing: 2.4px;
+      width: 9%;
+    }
+
+    &__links {
+      list-style-type: none;
+      padding: 8px;
+
+      & > li {
+        display: inline;
+        margin-right: 20px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        & > a {
+          color: white;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
