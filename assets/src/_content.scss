@@ -1,22 +1,26 @@
 .main {
   background-image: url("../images/why-choose-us.png");
-  display: grid;
-  grid-template-columns: 50% 27%;
-  grid-template-rows: auto auto;
+  /*display: grid;
+  grid-template-columns: 44% 33.2%;
+  grid-template-rows: auto;*/
+  display: flex;
   margin: auto;
-  padding-top: 120px;
-  padding-bottom: 227px;
-  padding-left: 90px;
-  /*width: 80%;*/
+  min-width: 720px;
+  padding-top: 78px;
+  padding-bottom: 82px;
+  padding-left: 223px;
 
-  &__wrapper {
-    grid-row: 1/3;
+  &__why-choose-us {
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+    width: 44%;
   }
 
   &__title {
     color: white;
     font-family: Aleo, sans-serif;
-    font-size: 36px;
+    font-size: 25px;
     font-weight: 400;
     line-height: 26px;
   }
@@ -24,11 +28,20 @@
   &__description {
     color: #e8e8e8;
     font-family: "Josefin Sans";
-    font-size: 16px;
+    font-size: 9px;
     font-weight: 400;
-    line-height: 26px;
-    letter-spacing: 1.6px;
-    width: 85%;
+    line-height: 18px;
+    letter-spacing: 1px;
+    margin-top: 18px;
+    padding-left: 2px;
+    width: 83%;
+    word-spacing: 1px;
+
+    &--second-p {
+      letter-spacing: 1px;
+      margin-top: 8px;
+      margin-bottom: 28px;
+    }
   }
 
   &__explore {
@@ -36,54 +49,175 @@
     border: none;
     color: #ffffff;
     font-family: Aleo;
-    font-size: 16px;
+    font-size: 10px;
     font-weight: 400;
-    line-height: 26px;
+    line-height: 39px;
     text-transform: uppercase;
     letter-spacing: 1.2px;
+    margin-left: 1px;
+    width: 36%;
   }
 
   &__cities {
+    display: flex;
+    flex-direction: column;
     grid-column-start: 2;
-    grid-row-start: 1;
+    padding-left: 0;
+    padding-right: 4px;
+    padding-top: 2px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 33%;
   }
 
   img:first-of-type {
     grid-row: 1/2;
     grid-column: 2/3;
     height: auto;
-    width: 100%;
+    width: 74%;
+    margin-bottom: 2px;
   }
 
   img:last-of-type {
-    grid-row: 2/3;
-    grid-column: 2/3;
-    height: auto;
-    margin-left: 55px;
-    width: 100%;
+    width: 73%;
+    align-self: flex-end;
   }
 }
 
 .steps {
   background-color: #333333;
+  padding-right: 205.828px;
+  padding-left: 205.828px;
   display: flex;
   justify-content: space-around;
-  padding-top: 99px;
-  padding-bottom: 99px;
+  padding-top: 39px;
+  padding-bottom: 58px;
+
+  &:nth-child(2) {
+    margin-left: 46px;
+  }
 
   & > figure {
     text-align: center;
+    margin-top: 27px;
+
+    & > img {
+      width: 28%;
+    }
 
     & > figcaption {
       color: #e8e8e8;
       font-family: Aleo;
-      font-size: 36px;
+      font-size: 25px;
       font-weight: 400;
-      line-height: 26px;
+      line-height: 36px;
+      margin-top: 8px;
     }
   }
 }
 
 .Spain {
   background-image: url("../images/Spain.png");
+  background-size: cover;
+
+  display: flex;
+  padding-top: 155px;
+  padding-bottom: 66px;
+  padding-left: 225px;
+  justify-content: flex-start;
+
+  &--background {
+    background-image: url("../images/sunset.png");
+    justify-content: flex-end;
+    padding-right: 220px;
+    padding-top: 157px;
+
+    & > div {
+      width: 46.3%;
+    }
+  }
+
+  &__description {
+    padding-top: 17px;
+    padding-left: 18px;
+    padding-bottom: 17px;
+    width: 35.6%;
+    background-color: #232323;
+    opacity: 0.9;
+    color: #e8e8e8;
+    font-family: "Josefin Sans";
+    letter-spacing: -1px;
+
+    & > h3 {
+      font-weight: normal;
+      font-size: 16px;
+    }
+
+    & > h1 {
+      font-size: 14px;
+      font-weight: normal;
+      margin-top: 18px;
+      text-transform: uppercase;
+      margin-left: 1px;
+    }
+
+    & > p {
+      margin-bottom: 31px;
+      font-size: 11px;
+      margin-top: 15px;
+      line-height: 17px;
+      font-weight: normal;
+      margin-left: 1px;
+      padding-right: 11px;
+      letter-spacing: -0.79px;
+    }
+
+    & > button {
+      padding: 9px;
+      width: 44%;
+      margin-bottom: 18px;
+      background-color: #5474fd;
+      border: none;
+      padding-bottom: 13px;
+      color: #ffffff;
+      font-weight: normal;
+      font-size: 15px;
+      padding-left: 7px;
+      margin-left: 3px;
+    }
+
+  }
+}
+
+.feedback {
+  background-image: url("../images/tourist_say.png");
+  background-size: cover;
+  padding-top: 53px;
+
+  &__title {
+    color: #ffffff;
+    font-family: Aleo;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 63px;
+    text-align: center;
+  }
+
+  &__item {
+    width: 58%;
+    margin: auto;
+    margin-left: 223px;
+
+    & > img {
+      width: 44%;
+    }
+  }
+
+  &__text {
+    display: inline-block;
+    & > h4 {
+      display: inline-block;
+    }
+  }
 }

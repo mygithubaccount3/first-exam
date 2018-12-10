@@ -1,11 +1,11 @@
 @font-face {
   font-family: "Aleo";
-  src: url("/fonts/aleo-regular-webfont.eot");
-  src: url('/fonts/aleo-regular-webfont.eot?#iefix') format('embedded-opentype'),
-  url('/fonts/aleo-regular-webfont.woff2') format('woff2'),
-  url('/fonts/aleo-regular-webfont.woff') format('woff'),
-  url('/fonts/aleo-regular-webfont.ttf') format('truetype'),
-  url('/fonts/aleo-regular-webfont.svg#Aleo Regular') format('svg');
+  src: url("../../fonts/aleo-regular-webfont.eot");
+  src: url('../../fonts/aleo-regular-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../../fonts/aleo-regular-webfont.woff2') format('woff2'),
+  url('../../fonts/aleo-regular-webfont.woff') format('woff'),
+  url('../../fonts/aleo-regular-webfont.ttf') format('truetype'),
+  url('../../fonts/aleo-regular-webfont.svg#Aleo Regular') format('svg');
 }
 
 ::placeholder {
@@ -18,53 +18,83 @@
 }
 
 body {
+  box-sizing: border-box;
   margin: 0;
+  padding: 10px;
+  /*padding-top: 10px;
+  padding-right: 16px;*/
+  width: 100%;
 }
 
 .header {
   background: url("../images/header.png");
-  padding-top: 265px;
+  padding-top: 154px;
+  /*padding-left: 560px;*/
   /*padding-bottom: 110px;*/
-  background-size: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   &__title {
     color: #ffffff;
     font-family: "Josefin Sans", sans-serif;
-    font-size: 48px;
+    font-size: 31px;
     font-weight: 700;
     line-height: 26px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 52.5%;
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: 4.8px;
+    letter-spacing: 3.45px;
+    padding-left: 3px;
+    padding-top: 5px;
+    margin-bottom: 7px;
   }
 
   &__tagline {
     color: #ffffff;
     font-family: "Josefin Sans", sans-serif;
-    font-size: 22px;
+    font-size: 14px;
     font-weight: 400;
-    line-height: 26px;
-    letter-spacing: 6.82px;
+    line-height: 18px;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    width: 52.5%;
+    letter-spacing: 4px;
     text-align: center;
+    padding-left: 3px;
   }
 
   &__search {
-    margin: auto;
-    width: 49%;
+    /*margin: auto;*/
+    margin-left: auto;
+    margin-right: auto;
+    width: 37.2%;
+    border: 1px solid white;
+    min-width: 450px;
+    box-sizing: border-box;
   }
 
   &__input {
     border: none;
-    line-height: 1.5;
-    padding: 6px;
-    width: 77%;
+    font-family: "Josefin Sans", sans-serif;
+    line-height: 2.1;
+    padding: 6.6px;
+    text-align: center;
+    width: 75%;
   }
 
   &__submit {
     background-color: #5474fd;;
     border: none;
     color: white;
-    padding: 4.2px;
+    padding: 5.2px;
+    padding-bottom: 8px;
+    padding-top: 6px;
+    width: 22%;
+    box-sizing: border-box;
   }
 
   &__btn-title {
@@ -73,22 +103,24 @@ body {
     font-weight: 400;
     line-height: 26px;
     text-transform: uppercase;
-    letter-spacing: 1.4px;
+    letter-spacing: 0.8px;
   }
 
   &__scroll {
     color: white;
     display: block;
-    margin: auto;
-    margin-top: 120px;
-    margin-bottom: 135px;
+    /*margin: auto;*/
+    margin-top: 77px;
+    margin-bottom: 88px;
+    margin-left: 4px;
     text-align: center;
     text-decoration: none;
-    width: 20%;
+    font-size: 13px;
+    /*width: 20%;*/
 
     &::after {
       display: block;
-      margin-top: 15px;
+      margin-top: -2px;
       content: "^";
       color: white;
       text-align: center;
@@ -105,7 +137,7 @@ body {
       color: white;
       display: inline-block;
       font-family: "Josefin Sans", sans-serif;
-      font-size: 24px;
+      font-size: 15px;
       font-weight: 700;
       line-height: 26px;
       text-transform: uppercase;
@@ -115,7 +147,7 @@ body {
 
     &__links {
       list-style-type: none;
-      padding: 8px;
+      padding: 3px;
 
       & > li {
         display: inline;
