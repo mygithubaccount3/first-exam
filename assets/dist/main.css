@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Aleo";
   src: url("../../fonts/aleo-regular-webfont.eot");
@@ -321,6 +322,7 @@ body {
   background-image: url("../images/tourist_say.png");
   background-size: cover;
   padding-top: 53px;
+  padding-bottom: 137px;
 }
 .feedback__title {
   color: #ffffff;
@@ -332,18 +334,86 @@ body {
   text-align: center;
 }
 .feedback__item {
-  width: 58%;
+  padding-bottom: 1px;
+  width: 71%;
   margin: auto;
   margin-left: 223px;
+  padding-left: 2px;
 }
 .feedback__item > img {
-  width: 44%;
+  width: 35.4%;
+  vertical-align: top;
 }
 .feedback__text {
   display: inline-block;
+  width: 51%;
+  padding-left: 36px;
+  padding-top: 29px;
 }
 .feedback__text > h4 {
   display: inline-block;
+  color: #fefefe;
+  font-family: "Josefin Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  margin-top: 0;
+  letter-spacing: -0.75px;
+}
+.feedback__text > p {
+  color: #e8e8e8;
+  font-family: "Josefin Sans";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  width: 113%;
+  letter-spacing: -1.2px;
+}
+.feedback__text > p::before {
+  content: "";
+  color: #5474fd;
+  font-family: "Font Awesome";
+  font-size: 36px;
+}
+
+.footer {
+  background-color: #232323;
+  padding-top: 76px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.footer__title {
+  color: #ffffff;
+  font-family: "Josefin Sans";
+  font-size: 14px;
+  margin-left: 4px;
+  margin-bottom: 0;
+  font-weight: 700;
+  line-height: 26px;
+  margin-top: 0;
+  text-transform: uppercase;
+  /* Text style for "Bhromaon" */
+  letter-spacing: 3.36px;
+}
+.footer__tagline {
+  color: #ffffff;
+  font-family: "Josefin Sans";
+  font-size: 9px;
+  font-weight: 400;
+  line-height: 17px;
+  /* Text style for "S, afe Tra" */
+  letter-spacing: 1px;
+  margin-top: 0;
+}
+.footer__tagline::after {
+  content: "";
+  font-family: "FontAwesome";
+  display: block;
+  letter-spacing: 19px;
+  font-size: 10px;
+  line-height: 44px;
 }
 
 /*# sourceMappingURL=main.css.map */
