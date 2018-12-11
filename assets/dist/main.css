@@ -88,6 +88,9 @@ body {
   width: 22%;
   box-sizing: border-box;
 }
+.header__submit:hover {
+  background-color: #496bfe;
+}
 .header__btn-title {
   font-family: Aleo, sans-serif;
   font-size: 14px;
@@ -107,6 +110,10 @@ body {
   text-decoration: none;
   font-size: 13px;
   /*width: 20%;*/
+}
+.header__scroll:hover::after {
+  position: relative;
+  top: 20px;
 }
 .header__scroll::after {
   display: block;
@@ -148,8 +155,12 @@ body {
   text-decoration: none;
 }
 
+/*a:hover {
+  background-color: #496bfe;
+}*/
 .main {
   background-image: url("../images/why-choose-us.png");
+  background-size: cover;
   /*display: grid;
   grid-template-columns: 44% 33.2%;
   grid-template-rows: auto;*/
@@ -198,10 +209,15 @@ body {
   font-size: 10px;
   font-weight: 400;
   line-height: 39px;
+  text-align: center;
+  text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 1.2px;
   margin-left: 1px;
   width: 36%;
+}
+.main__explore:hover {
+  background-color: #496bfe;
 }
 .main__cities {
   display: flex;
@@ -253,18 +269,24 @@ body {
   line-height: 36px;
   margin-top: 8px;
 }
+.steps > figure > figcaption::before {
+  content: "";
+  font-family: "FontAwesome";
+  display: block;
+}
 
 .Spain {
   background-image: url("../images/Spain.png");
   background-size: cover;
   display: flex;
   padding-top: 155px;
-  padding-bottom: 66px;
+  padding-bottom: 68px;
   padding-left: 225px;
   justify-content: flex-start;
 }
 .Spain--background {
   background-image: url("../images/sunset.png");
+  background-size: cover;
   justify-content: flex-end;
   padding-right: 220px;
   padding-top: 157px;
@@ -295,7 +317,7 @@ body {
   margin-left: 1px;
 }
 .Spain__description > p {
-  margin-bottom: 31px;
+  margin-bottom: 28px;
   font-size: 11px;
   margin-top: 15px;
   line-height: 17px;
@@ -304,18 +326,25 @@ body {
   padding-right: 11px;
   letter-spacing: -0.79px;
 }
-.Spain__description > button {
+.Spain__description > a {
+  display: block;
   padding: 9px;
-  width: 44%;
+  padding-top: 8px;
+  width: 39%;
   margin-bottom: 18px;
   background-color: #5474fd;
   border: none;
-  padding-bottom: 13px;
+  padding-bottom: 17px;
+  text-align: center;
   color: #ffffff;
   font-weight: normal;
   font-size: 15px;
   padding-left: 7px;
   margin-left: 3px;
+  text-decoration: none;
+}
+.Spain__description > a:hover {
+  background-color: #496bfe;
 }
 
 .feedback {
@@ -372,10 +401,10 @@ body {
   letter-spacing: -1.2px;
 }
 .feedback__text > p::before {
-  content: "";
+  content: "";
   color: #5474fd;
-  font-family: "Font Awesome";
-  font-size: 36px;
+  font-family: "FontAwesome";
+  font-size: 17px;
 }
 
 .footer {
@@ -383,6 +412,9 @@ body {
   padding-top: 76px;
   text-align: center;
   padding-bottom: 10px;
+  /*&__social--fb, &__social--tw, &__social--ln, &__social--yt:hover {
+    color: #5474fd;
+  }*/
 }
 .footer__title {
   color: #ffffff;
@@ -406,14 +438,50 @@ body {
   /* Text style for "S, afe Tra" */
   letter-spacing: 1px;
   margin-top: 0;
+  /*&::after {
+    content: "\f09a \f099 \f0e1 \f16a";
+    font-family: "FontAwesome";
+    display: block;
+    letter-spacing: 19px;
+    font-size: 10px;
+    line-height: 44px;
+  }*/
 }
-.footer__tagline::after {
-  content: "";
+.footer__social--fb, .footer__social--tw, .footer__social--ln, .footer__social--yt {
+  margin-right: 11px;
+  text-decoration: none;
+}
+.footer__social--fb::after {
+  content: "";
   font-family: "FontAwesome";
-  display: block;
-  letter-spacing: 19px;
-  font-size: 10px;
-  line-height: 44px;
+  color: #e8e8e8;
+}
+.footer__social--fb:hover::after {
+  color: #496bfe;
+}
+.footer__social--tw::after {
+  content: "";
+  font-family: "FontAwesome";
+  color: #e8e8e8;
+}
+.footer__social--tw:hover::after {
+  color: #496bfe;
+}
+.footer__social--ln::after {
+  content: "";
+  font-family: "FontAwesome";
+  color: #e8e8e8;
+}
+.footer__social--ln:hover::after {
+  color: #496bfe;
+}
+.footer__social--yt::after {
+  content: "";
+  font-family: "FontAwesome";
+  color: #e8e8e8;
+}
+.footer__social--yt:hover::after {
+  color: #496bfe;
 }
 
 /*# sourceMappingURL=main.css.map */

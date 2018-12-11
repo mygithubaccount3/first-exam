@@ -87,7 +87,7 @@ body {
   }
 
   &__submit {
-    background-color: #5474fd;;
+    background-color: #5474fd;
     border: none;
     color: white;
     padding: 5.2px;
@@ -95,6 +95,10 @@ body {
     padding-top: 6px;
     width: 22%;
     box-sizing: border-box;
+
+    &:hover {
+      background-color: #496bfe;
+    }
   }
 
   &__btn-title {
@@ -117,6 +121,11 @@ body {
     text-decoration: none;
     font-size: 13px;
     /*width: 20%;*/
+
+    &:hover::after {
+      position: relative;
+      top: 20px;
+    }
 
     &::after {
       display: block;

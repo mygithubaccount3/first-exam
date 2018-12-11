@@ -1,5 +1,10 @@
+/*a:hover {
+  background-color: #496bfe;
+}*/
+
 .main {
   background-image: url("../images/why-choose-us.png");
+  background-size: cover;
   /*display: grid;
   grid-template-columns: 44% 33.2%;
   grid-template-rows: auto;*/
@@ -52,10 +57,16 @@
     font-size: 10px;
     font-weight: 400;
     line-height: 39px;
+    text-align: center;
+    text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 1.2px;
     margin-left: 1px;
     width: 36%;
+
+    &:hover {
+      background-color: #496bfe;
+    }
   }
 
   &__cities {
@@ -112,6 +123,12 @@
       font-weight: 400;
       line-height: 36px;
       margin-top: 8px;
+
+      &::before {
+        content: "\f002";
+        font-family: "FontAwesome";
+        display: block;
+      }
     }
   }
 }
@@ -122,12 +139,13 @@
 
   display: flex;
   padding-top: 155px;
-  padding-bottom: 66px;
+  padding-bottom: 68px;
   padding-left: 225px;
   justify-content: flex-start;
 
   &--background {
     background-image: url("../images/sunset.png");
+    background-size: cover;
     justify-content: flex-end;
     padding-right: 220px;
     padding-top: 157px;
@@ -162,7 +180,7 @@
     }
 
     & > p {
-      margin-bottom: 31px;
+      margin-bottom: 28px;
       font-size: 11px;
       margin-top: 15px;
       line-height: 17px;
@@ -172,18 +190,26 @@
       letter-spacing: -0.79px;
     }
 
-    & > button {
+    & > a {
+      display: block;
       padding: 9px;
-      width: 44%;
+      padding-top: 8px;
+      width: 39%;
       margin-bottom: 18px;
       background-color: #5474fd;
       border: none;
-      padding-bottom: 13px;
+      padding-bottom: 17px;
+      text-align: center;
       color: #ffffff;
       font-weight: normal;
       font-size: 15px;
       padding-left: 7px;
       margin-left: 3px;
+      text-decoration: none;
+
+      &:hover {
+        background-color: #496bfe;
+      }
     }
 
   }
@@ -256,12 +282,12 @@
       letter-spacing: -1.2px;
 
       &::before {
-        content: "\f10e";
+        content: "\f10d";
         color: #5474fd;
 
-        font-family: "Font Awesome";
+        font-family: "FontAwesome";
 
-        font-size: 36px;
+        font-size: 17px;
       }
     }
   }
@@ -310,13 +336,64 @@
     letter-spacing: 1px;
     margin-top: 0;
 
-    &::after {
+    /*&::after {
       content: "\f09a \f099 \f0e1 \f16a";
       font-family: "FontAwesome";
       display: block;
       letter-spacing: 19px;
       font-size: 10px;
       line-height: 44px;
-    }
+    }*/
   }
+
+  /*&__social--fb, &__social--tw, &__social--ln, &__social--yt:hover {
+    color: #5474fd;
+  }*/
+
+  &__social--fb, &__social--tw, &__social--ln, &__social--yt {
+    margin-right: 11px;
+    text-decoration: none;
+  }
+
+  &__social--fb::after {
+    content: "\f09a";
+    font-family: "FontAwesome";
+    color: #e8e8e8;
+  }
+
+  &__social--fb:hover::after {
+    color: #496bfe;
+  }
+
+  &__social--tw::after {
+    content: "\f099";
+    font-family: "FontAwesome";
+    color: #e8e8e8;
+  }
+
+  &__social--tw:hover::after {
+    color: #496bfe;
+  }
+
+  &__social--ln::after {
+    content: "\f0e1";
+    font-family: "FontAwesome";
+    color: #e8e8e8;
+  }
+
+  &__social--ln:hover::after {
+    color: #496bfe;
+  }
+
+  &__social--yt::after {
+    content: "\f16a";
+    font-family: "FontAwesome";
+    color: #e8e8e8;
+  }
+
+  &__social--yt:hover::after {
+    color: #496bfe;
+  }
+
+
 }
