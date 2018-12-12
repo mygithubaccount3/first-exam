@@ -17,16 +17,12 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 10px;
-  /*padding-top: 10px;
-  padding-right: 16px;*/
   width: 100%;
 }
 
 .header {
   background: url("../images/header.png");
   padding-top: 154px;
-  /*padding-left: 560px;*/
-  /*padding-bottom: 110px;*/
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -62,7 +58,6 @@ body {
   padding-left: 3px;
 }
 .header__search {
-  /*margin: auto;*/
   margin-left: auto;
   margin-right: auto;
   width: 37.2%;
@@ -77,6 +72,12 @@ body {
   padding: 6.6px;
   text-align: center;
   width: 75%;
+}
+.header__input:focus {
+  outline: none;
+  -webkit-box-shadow: inset 0px 0px 10px 0px #0590fa;
+  -moz-box-shadow: inset 0px 0px 10px 0px #0590fa;
+  box-shadow: inset 0px 0px 10px 0px #0590fa;
 }
 .header__submit {
   background-color: #5474fd;
@@ -99,17 +100,19 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.8px;
 }
+.header__btn-title::after {
+  content: "";
+  font-family: "FontAwesome";
+}
 .header__scroll {
   color: white;
   display: block;
-  /*margin: auto;*/
   margin-top: 77px;
   margin-bottom: 88px;
   margin-left: 4px;
   text-align: center;
   text-decoration: none;
   font-size: 13px;
-  /*width: 20%;*/
 }
 .header__scroll:hover::after {
   position: relative;
@@ -154,10 +157,10 @@ body {
   color: white;
   text-decoration: none;
 }
+.header .nav__links > li > a:hover {
+  font-weight: bolder;
+}
 
-/*a:hover {
-  background-color: #496bfe;
-}*/
 .main {
   background-image: url("../images/why-choose-us.png");
   background-size: cover;
@@ -245,7 +248,7 @@ body {
 .steps {
   background-color: #333333;
   padding-right: 205.828px;
-  padding-left: 205.828px;
+  padding-left: 211.828px;
   display: flex;
   justify-content: space-around;
   padding-top: 39px;
@@ -256,10 +259,13 @@ body {
 }
 .steps > figure {
   text-align: center;
-  margin-top: 27px;
+  margin-top: 22px;
 }
-.steps > figure > img {
-  width: 28%;
+.steps > figure::before {
+  transition: font-size 1s;
+}
+.steps > figure:hover::before {
+  font-size: 100px;
 }
 .steps > figure > figcaption {
   color: #e8e8e8;
@@ -267,12 +273,30 @@ body {
   font-size: 25px;
   font-weight: 400;
   line-height: 36px;
-  margin-top: 8px;
 }
-.steps > figure > figcaption::before {
+.steps__search::before {
   content: "";
   font-family: "FontAwesome";
-  display: block;
+  color: #5474fd;
+  font-size: 44px;
+}
+.steps__select::before {
+  content: "";
+  font-family: "FontAwesome";
+  color: #ff6363;
+  font-size: 49px;
+}
+.steps__enjoy::before {
+  content: "";
+  font-family: "FontAwesome";
+  font-size: 54px;
+  color: #00a2ff;
+}
+.steps__select > figcaption {
+  margin-top: 8px;
+}
+.steps__search > figcaption {
+  margin-top: 13px;
 }
 
 .Spain {
@@ -412,9 +436,6 @@ body {
   padding-top: 76px;
   text-align: center;
   padding-bottom: 10px;
-  /*&__social--fb, &__social--tw, &__social--ln, &__social--yt:hover {
-    color: #5474fd;
-  }*/
 }
 .footer__title {
   color: #ffffff;
@@ -438,14 +459,6 @@ body {
   /* Text style for "S, afe Tra" */
   letter-spacing: 1px;
   margin-top: 0;
-  /*&::after {
-    content: "\f09a \f099 \f0e1 \f16a";
-    font-family: "FontAwesome";
-    display: block;
-    letter-spacing: 19px;
-    font-size: 10px;
-    line-height: 44px;
-  }*/
 }
 .footer__social--fb, .footer__social--tw, .footer__social--ln, .footer__social--yt {
   margin-right: 11px;

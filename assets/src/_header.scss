@@ -21,16 +21,12 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 10px;
-  /*padding-top: 10px;
-  padding-right: 16px;*/
   width: 100%;
 }
 
 .header {
   background: url("../images/header.png");
   padding-top: 154px;
-  /*padding-left: 560px;*/
-  /*padding-bottom: 110px;*/
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -68,7 +64,6 @@ body {
   }
 
   &__search {
-    /*margin: auto;*/
     margin-left: auto;
     margin-right: auto;
     width: 37.2%;
@@ -84,6 +79,13 @@ body {
     padding: 6.6px;
     text-align: center;
     width: 75%;
+
+    &:focus {
+      outline: none;
+      -webkit-box-shadow: inset 0px 0px 10px 0px rgba(5,144,250,1);
+      -moz-box-shadow: inset 0px 0px 10px 0px rgba(5,144,250,1);
+      box-shadow: inset 0px 0px 10px 0px rgba(5,144,250,1);
+    }
   }
 
   &__submit {
@@ -108,19 +110,22 @@ body {
     line-height: 26px;
     text-transform: uppercase;
     letter-spacing: 0.8px;
+
+    &::after {
+      content: "\f002";
+      font-family: "FontAwesome";
+    }
   }
 
   &__scroll {
     color: white;
     display: block;
-    /*margin: auto;*/
     margin-top: 77px;
     margin-bottom: 88px;
     margin-left: 4px;
     text-align: center;
     text-decoration: none;
     font-size: 13px;
-    /*width: 20%;*/
 
     &:hover::after {
       position: relative;
@@ -169,6 +174,10 @@ body {
         & > a {
           color: white;
           text-decoration: none;
+
+          &:hover {
+            font-weight: bolder;
+          }
         }
       }
     }
