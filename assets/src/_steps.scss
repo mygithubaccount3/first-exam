@@ -1,0 +1,64 @@
+.steps {
+  background-color: #333333;
+  padding-right: 205.828px;
+  padding-left: 211.828px;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 39px;
+  padding-bottom: 58px;
+
+  &:nth-child(2) {
+    margin-left: 46px;
+  }
+
+  & > figure {
+    text-align: center;
+    margin-top: 22px;
+
+    &::before {
+      transition: font-size 1s;
+    }
+
+    &:hover::before {
+      font-size: 100px;
+    }
+
+    & > figcaption {
+      color: #e8e8e8;
+      font-family: Aleo;
+      font-size: 25px;
+      font-weight: 400;
+      line-height: 36px;
+    }
+  }
+
+  &__search::before {
+    content: "\f002";
+    font-family: "FontAwesome";
+    color: #5474fd;
+    font-size: 44px;
+
+  }
+
+  &__select::before {
+    content: "\f05d";
+    font-family: "FontAwesome";
+    color: #ff6363;
+    font-size: 49px;
+  }
+
+  &__enjoy::before {
+    content: "\f087";
+    font-family: "FontAwesome";
+    font-size: 54px;
+    color: #00a2ff;
+  }
+
+  &__select > figcaption {
+    margin-top: 8px;
+  }
+
+  &__search > figcaption {
+    margin-top: 13px;
+  }
+}

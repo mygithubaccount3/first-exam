@@ -1,0 +1,65 @@
+.feedback {
+  background-image: url("../images/tourist_say.png");
+  background-size: cover;
+  padding-top: 53px;
+  padding-bottom: 137px;
+
+  &__title {
+    color: #ffffff;
+    font-family: Aleo;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 63px;
+    text-align: center;
+  }
+
+  &__item {
+    padding-bottom: 1px;
+    width: 71%;
+    margin: auto;
+    margin-left: 223px;
+    padding-left: 2px;
+
+    & > img {
+      width: 35.4%;
+      vertical-align: top;
+    }
+  }
+
+  &__text {
+    display: inline-block;
+    width: 51%;
+    padding-left: 36px;
+    padding-top: 29px;
+
+    & > h4 {
+      display: inline-block;
+      color: #fefefe;
+      font-family: "Josefin Sans";
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 26px;
+      text-transform: uppercase;
+      margin-bottom: 0;
+      margin-top: 0;
+      letter-spacing: -0.75px;
+    }
+    & > p {
+      color: #e8e8e8;
+      font-family: "Josefin Sans";
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 18px;
+      width: 113%;
+      letter-spacing: -1.2px;
+
+      &::before {
+        content: "\f10d";
+        color: #5474fd;
+        font-family: "FontAwesome";
+        font-size: 17px;
+      }
+    }
+  }
+}

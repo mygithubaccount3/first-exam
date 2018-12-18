@@ -17,50 +17,50 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 10px;
+  padding-top: 15px;
   width: 100%;
 }
 
 .header {
   background: url("../images/header.png");
-  padding-top: 154px;
+  padding-top: 272px;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .header__title {
   color: #ffffff;
   font-family: "Josefin Sans", sans-serif;
-  font-size: 31px;
+  font-size: 48px;
   font-weight: 700;
   line-height: 26px;
   margin-left: auto;
   margin-right: auto;
-  width: 52.5%;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 3.45px;
-  padding-left: 3px;
+  letter-spacing: 3px;
+  padding-left: 14px;
   padding-top: 5px;
-  margin-bottom: 7px;
+  margin-bottom: 16px;
+  margin-top: 0;
 }
 .header__tagline {
   color: #ffffff;
   font-family: "Josefin Sans", sans-serif;
-  font-size: 14px;
+  font-size: 22px;
   font-weight: 400;
-  line-height: 18px;
+  line-height: 26px;
   margin-top: 0;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 30px;
-  width: 52.5%;
-  letter-spacing: 4px;
+  margin-bottom: 46px;
+  letter-spacing: 5.3px;
   text-align: center;
-  padding-left: 3px;
+  padding-left: 17px;
 }
 .header__search {
-  margin-left: auto;
+  margin-left: 313px;
   margin-right: auto;
-  width: 37.2%;
+  width: 51.4%;
   border: 1px solid white;
   min-width: 450px;
   box-sizing: border-box;
@@ -68,10 +68,10 @@ body {
 .header__input {
   border: none;
   font-family: "Josefin Sans", sans-serif;
-  line-height: 2.1;
-  padding: 6.6px;
+  line-height: 3;
+  padding: 9.6px;
   text-align: center;
-  width: 75%;
+  width: 74%;
 }
 .header__input:focus {
   outline: none;
@@ -81,13 +81,20 @@ body {
 }
 .header__submit {
   background-color: #5474fd;
-  border: none;
-  color: white;
+  border: 2px solid #ffffff;
   padding: 5.2px;
-  padding-bottom: 8px;
-  padding-top: 6px;
-  width: 22%;
+  padding-bottom: 16px;
+  padding-top: 13px;
+  width: 23.043%;
   box-sizing: border-box;
+  color: #ffffff;
+  font-family: Aleo;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  text-transform: uppercase;
+  /* Text style for "Search" */
+  letter-spacing: 1.4px;
 }
 .header__submit:hover {
   background-color: #496bfe;
@@ -103,16 +110,22 @@ body {
 .header__btn-title::after {
   content: "";
   font-family: "FontAwesome";
+  padding-left: 18px;
 }
 .header__scroll {
-  color: white;
+  color: #ffffff;
   display: block;
-  margin-top: 77px;
+  font-family: "Josefin Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  /* Text style for "S, croll D" */
+  letter-spacing: 2.5px;
+  margin-top: 113px;
   margin-bottom: 88px;
-  margin-left: 4px;
+  margin-left: 11px;
   text-align: center;
   text-decoration: none;
-  font-size: 13px;
 }
 .header__scroll:hover::after {
   position: relative;
@@ -159,6 +172,78 @@ body {
 }
 .header .nav__links > li > a:hover {
   font-weight: bolder;
+}
+
+.Spain {
+  background-image: url("../images/Spain.png");
+  background-size: cover;
+  display: flex;
+  padding-top: 155px;
+  padding-bottom: 68px;
+  padding-left: 225px;
+  justify-content: flex-start;
+}
+.Spain--background {
+  background-image: url("../images/sunset.png");
+  background-size: cover;
+  justify-content: flex-end;
+  padding-right: 220px;
+  padding-top: 157px;
+}
+.Spain--background > div {
+  width: 46.3%;
+}
+.Spain__description {
+  padding-top: 17px;
+  padding-left: 18px;
+  padding-bottom: 17px;
+  width: 35.6%;
+  background-color: #232323;
+  opacity: 0.9;
+  color: #e8e8e8;
+  font-family: "Josefin Sans";
+  letter-spacing: -1px;
+}
+.Spain__description > h3 {
+  font-weight: normal;
+  font-size: 16px;
+}
+.Spain__description > h1 {
+  font-size: 14px;
+  font-weight: normal;
+  margin-top: 18px;
+  text-transform: uppercase;
+  margin-left: 1px;
+}
+.Spain__description > p {
+  margin-bottom: 28px;
+  font-size: 11px;
+  margin-top: 15px;
+  line-height: 17px;
+  font-weight: normal;
+  margin-left: 1px;
+  padding-right: 11px;
+  letter-spacing: -0.79px;
+}
+.Spain__description > a {
+  display: block;
+  padding: 9px;
+  padding-top: 8px;
+  width: 39%;
+  margin-bottom: 18px;
+  background-color: #5474fd;
+  border: none;
+  padding-bottom: 17px;
+  text-align: center;
+  color: #ffffff;
+  font-weight: normal;
+  font-size: 15px;
+  padding-left: 7px;
+  margin-left: 3px;
+  text-decoration: none;
+}
+.Spain__description > a:hover {
+  background-color: #496bfe;
 }
 
 .main {
@@ -299,78 +384,6 @@ body {
   margin-top: 13px;
 }
 
-.Spain {
-  background-image: url("../images/Spain.png");
-  background-size: cover;
-  display: flex;
-  padding-top: 155px;
-  padding-bottom: 68px;
-  padding-left: 225px;
-  justify-content: flex-start;
-}
-.Spain--background {
-  background-image: url("../images/sunset.png");
-  background-size: cover;
-  justify-content: flex-end;
-  padding-right: 220px;
-  padding-top: 157px;
-}
-.Spain--background > div {
-  width: 46.3%;
-}
-.Spain__description {
-  padding-top: 17px;
-  padding-left: 18px;
-  padding-bottom: 17px;
-  width: 35.6%;
-  background-color: #232323;
-  opacity: 0.9;
-  color: #e8e8e8;
-  font-family: "Josefin Sans";
-  letter-spacing: -1px;
-}
-.Spain__description > h3 {
-  font-weight: normal;
-  font-size: 16px;
-}
-.Spain__description > h1 {
-  font-size: 14px;
-  font-weight: normal;
-  margin-top: 18px;
-  text-transform: uppercase;
-  margin-left: 1px;
-}
-.Spain__description > p {
-  margin-bottom: 28px;
-  font-size: 11px;
-  margin-top: 15px;
-  line-height: 17px;
-  font-weight: normal;
-  margin-left: 1px;
-  padding-right: 11px;
-  letter-spacing: -0.79px;
-}
-.Spain__description > a {
-  display: block;
-  padding: 9px;
-  padding-top: 8px;
-  width: 39%;
-  margin-bottom: 18px;
-  background-color: #5474fd;
-  border: none;
-  padding-bottom: 17px;
-  text-align: center;
-  color: #ffffff;
-  font-weight: normal;
-  font-size: 15px;
-  padding-left: 7px;
-  margin-left: 3px;
-  text-decoration: none;
-}
-.Spain__description > a:hover {
-  background-color: #496bfe;
-}
-
 .feedback {
   background-image: url("../images/tourist_say.png");
   background-size: cover;
@@ -460,7 +473,7 @@ body {
   letter-spacing: 1px;
   margin-top: 0;
 }
-.footer__social--fb, .footer__social--tw, .footer__social--ln, .footer__social--yt {
+.footer__social {
   margin-right: 11px;
   text-decoration: none;
 }

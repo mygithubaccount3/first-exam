@@ -21,52 +21,52 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 10px;
+  padding-top: 15px;
   width: 100%;
 }
 
 .header {
   background: url("../images/header.png");
-  padding-top: 154px;
+  padding-top: 272px;
   background-repeat: no-repeat;
   background-size: cover;
 
   &__title {
     color: #ffffff;
     font-family: "Josefin Sans", sans-serif;
-    font-size: 31px;
+    font-size: 48px;
     font-weight: 700;
     line-height: 26px;
     margin-left: auto;
     margin-right: auto;
-    width: 52.5%;
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: 3.45px;
-    padding-left: 3px;
+    letter-spacing: 3px;
+    padding-left: 14px;
     padding-top: 5px;
-    margin-bottom: 7px;
+    margin-bottom: 16px;
+    margin-top: 0;
   }
 
   &__tagline {
     color: #ffffff;
     font-family: "Josefin Sans", sans-serif;
-    font-size: 14px;
+    font-size: 22px;
     font-weight: 400;
-    line-height: 18px;
+    line-height: 26px;
     margin-top: 0;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 30px;
-    width: 52.5%;
-    letter-spacing: 4px;
+    margin-bottom: 46px;
+    letter-spacing: 5.3px;
     text-align: center;
-    padding-left: 3px;
+    padding-left: 17px;
   }
 
   &__search {
-    margin-left: auto;
+    margin-left: 313px;
     margin-right: auto;
-    width: 37.2%;
+    width: 51.4%;
     border: 1px solid white;
     min-width: 450px;
     box-sizing: border-box;
@@ -75,10 +75,10 @@ body {
   &__input {
     border: none;
     font-family: "Josefin Sans", sans-serif;
-    line-height: 2.1;
-    padding: 6.6px;
+    line-height: 3;
+    padding: 9.6px;
     text-align: center;
-    width: 75%;
+    width: 74%;
 
     &:focus {
       outline: none;
@@ -90,13 +90,22 @@ body {
 
   &__submit {
     background-color: #5474fd;
-    border: none;
-    color: white;
+    border: 2px solid #ffffff;
     padding: 5.2px;
-    padding-bottom: 8px;
-    padding-top: 6px;
-    width: 22%;
+    padding-bottom: 16px;
+    padding-top: 13px;
+    width: 23.043%;
     box-sizing: border-box;
+
+    color: #ffffff;
+    font-family: Aleo;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    text-transform: uppercase;
+    /* Text style for "Search" */
+    letter-spacing: 1.4px;
+
 
     &:hover {
       background-color: #496bfe;
@@ -114,18 +123,24 @@ body {
     &::after {
       content: "\f002";
       font-family: "FontAwesome";
+      padding-left: 18px;
     }
   }
 
   &__scroll {
-    color: white;
+    color: #ffffff;
     display: block;
-    margin-top: 77px;
+    font-family: "Josefin Sans";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    /* Text style for "S, croll D" */
+    letter-spacing: 2.5px;
+    margin-top: 113px;
     margin-bottom: 88px;
-    margin-left: 4px;
+    margin-left: 11px;
     text-align: center;
     text-decoration: none;
-    font-size: 13px;
 
     &:hover::after {
       position: relative;
