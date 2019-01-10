@@ -1,76 +1,89 @@
+@mixin socialItemStyle( $content ) {
+  &::after {
+    content: $content;
+    font-family: "FontAwesome";
+    color: #e8e8e8;
+  }
+}
+
 .footer {
   background-color: #232323;
-  padding-top: 76px;
+  padding-top: 117px;
+  padding-bottom: 47px;
   text-align: center;
-  padding-bottom: 10px;
 
   &__title {
     color: #ffffff;
-    font-family: "Josefin Sans";
-    font-size: 14px;
-    margin-left: 4px;
-    margin-bottom: 0;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 24px;
     font-weight: 700;
-    line-height: 26px;
     margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 4px;
+    letter-spacing: 2.36px;
+    line-height: 26px;
     text-transform: uppercase;
-    /* Text style for "Bhromaon" */
-    letter-spacing: 3.36px;
   }
 
   &__tagline {
     color: #ffffff;
-    font-family: "Josefin Sans";
-    font-size: 9px;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 16px;
     font-weight: 400;
-    line-height: 17px;
-    /* Text style for "S, afe Tra" */
-    letter-spacing: 1px;
-    margin-top: 0;
+    letter-spacing: 0.6px;
+    line-height: 26px;
+    margin-top: 6px;
+    margin-bottom: 18px;
   }
 
   &__social {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1.6px;
+    line-height: 26px;
     margin-right: 11px;
+    padding-left: 8px;
     text-decoration: none;
-  }
 
-  &__social--fb::after {
-    content: "\f09a";
-    font-family: "FontAwesome";
-    color: #e8e8e8;
+    &--fb {
+      margin-right: 7px;
+      @include socialItemStyle( "\f09a" );
+    }
+
+    &--tw {
+      @include socialItemStyle( "\f099" );
+    }
+
+    &--ln {
+      @include socialItemStyle( "\f0e1" );
+    }
+
+    &--yt {
+      @include socialItemStyle( "\f16a" );
+    }
+
+    &--pt {
+      @include socialItemStyle( "\f0d2" );
+    }
   }
 
   &__social--fb:hover::after {
     color: #496bfe;
   }
 
-  &__social--tw::after {
-    content: "\f099";
-    font-family: "FontAwesome";
-    color: #e8e8e8;
-  }
-
   &__social--tw:hover::after {
     color: #496bfe;
-  }
-
-  &__social--ln::after {
-    content: "\f0e1";
-    font-family: "FontAwesome";
-    color: #e8e8e8;
   }
 
   &__social--ln:hover::after {
     color: #496bfe;
   }
 
-  &__social--yt::after {
-    content: "\f16a";
-    font-family: "FontAwesome";
-    color: #e8e8e8;
+  &__social--yt:hover::after {
+    color: #496bfe;
   }
 
-  &__social--yt:hover::after {
+  &__social--pt:hover::after {
     color: #496bfe;
   }
 }

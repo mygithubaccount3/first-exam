@@ -20,15 +20,13 @@
 body {
   box-sizing: border-box;
   margin: 0;
-  padding: 10px;
-  padding-top: 15px;
+  padding: 15px 10px 10px;
   width: 100%;
 }
 
 .header {
-  background: url("../images/header.png");
   padding-top: 272px;
-  background-repeat: no-repeat;
+  background: url("../images/header.png") no-repeat;
   background-size: cover;
 
   &__title {
@@ -37,15 +35,12 @@ body {
     font-size: 48px;
     font-weight: 700;
     line-height: 26px;
-    margin-left: auto;
-    margin-right: auto;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 3px;
-    padding-left: 14px;
     padding-top: 5px;
-    margin-bottom: 16px;
-    margin-top: 0;
+    margin: 0 auto 16px;
+    width: 28%;
   }
 
   &__tagline {
@@ -54,20 +49,16 @@ body {
     font-size: 22px;
     font-weight: 400;
     line-height: 26px;
-    margin-top: 0;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 46px;
+    margin: 0 auto 46px;
     letter-spacing: 5.3px;
     text-align: center;
-    padding-left: 17px;
+    width: 28%;
   }
 
   &__search {
-    margin-left: 313px;
+    margin-left: auto;
     margin-right: auto;
-    width: 51.4%;
-    border: 1px solid white;
+    width: 55.3%;
     min-width: 450px;
     box-sizing: border-box;
   }
@@ -75,37 +66,33 @@ body {
   &__input {
     border: none;
     font-family: "Josefin Sans", sans-serif;
-    line-height: 3;
-    padding: 9.6px;
+    padding-top: 23px;
+    padding-bottom: 23px;
     text-align: center;
-    width: 74%;
+    width: 77%;
 
     &:focus {
       outline: none;
-      -webkit-box-shadow: inset 0px 0px 10px 0px rgba(5,144,250,1);
-      -moz-box-shadow: inset 0px 0px 10px 0px rgba(5,144,250,1);
-      box-shadow: inset 0px 0px 10px 0px rgba(5,144,250,1);
+      -webkit-box-shadow: inset 0 0 10px 0 rgba(5,144,250,1);
+      -moz-box-shadow: inset 0 0 10px 0 rgba(5,144,250,1);
+      box-shadow: inset 0 0 10px 0 rgba(5,144,250,1);
     }
   }
 
   &__submit {
     background-color: #5474fd;
     border: 2px solid #ffffff;
-    padding: 5.2px;
     padding-bottom: 16px;
     padding-top: 13px;
-    width: 23.043%;
+    width: 23%;
     box-sizing: border-box;
-
     color: #ffffff;
-    font-family: Aleo;
+    font-family: Aleo, serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 26px;
     text-transform: uppercase;
-    /* Text style for "Search" */
     letter-spacing: 1.4px;
-
 
     &:hover {
       background-color: #496bfe;
@@ -130,17 +117,15 @@ body {
   &__scroll {
     color: #ffffff;
     display: block;
-    font-family: "Josefin Sans";
+    font-family: "Josefin Sans", sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 26px;
-    /* Text style for "S, croll D" */
     letter-spacing: 2.5px;
-    margin-top: 113px;
-    margin-bottom: 88px;
-    margin-left: 11px;
+    margin: 116px auto 124px;
     text-align: center;
     text-decoration: none;
+    width: 11%;
 
     &:hover::after {
       position: relative;
@@ -160,27 +145,39 @@ body {
   .nav {
     background-color: #5474fd;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 9px 32px 7px 34px;
 
     &__title {
-      color: white;
+      color: #ffffff;
       display: inline-block;
       font-family: "Josefin Sans", sans-serif;
-      font-size: 15px;
+      font-size: 24px;
       font-weight: 700;
       line-height: 26px;
+      margin-top: 18px;
+      margin-bottom: 0;
       text-transform: uppercase;
-      letter-spacing: 2.4px;
+      letter-spacing: 1.4px;
       width: 9%;
     }
 
     &__links {
+      display: flex;
+      justify-content: space-between;
       list-style-type: none;
       padding: 3px;
+      width: 47.3%;
 
       & > li {
         display: inline;
         margin-right: 20px;
+        color: #ffffff;
+        font-family: Aleo, sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 26px;
+        text-transform: uppercase;
 
         &:last-child {
           margin-right: 0;
@@ -188,10 +185,35 @@ body {
 
         & > a {
           color: white;
+          position: relative;
           text-decoration: none;
+          transition: all .3s cubic-bezier(.2, 0, 0, 1);
+          z-index: 1;
+
+          &::after {
+            content: "";
+            display: block;
+            background: white;
+            height: 0.001px;
+            position: absolute;
+            bottom: 0;
+            right: 1.25rem;
+            left: 1.25rem;
+            transition: all .3s cubic-bezier(.2, 0, 0, 1);
+            transform-origin: bottom center;
+            visibility: hidden;
+            z-index: -1;
+          }
 
           &:hover {
-            font-weight: bolder;
+            color: #5474fd;
+
+            &:after {
+              right: 0;
+              left: 0;
+              height: calc(100%);
+              visibility: visible;
+            }
           }
         }
       }
