@@ -1,47 +1,47 @@
 .main {
+  align-items: flex-end;
   background-image: url("../images/why-choose-us.png");
   background-size: cover;
   /*display: grid;
   grid-template-columns: 44% 33.2%;
   grid-template-rows: auto;*/
   display: flex;
-  margin: auto;
   min-width: 720px;
-  padding-top: 78px;
-  padding-bottom: 82px;
-  padding-left: 223px;
+  padding-top: 95px;
+  padding-bottom: 132px;
+  padding-left: 37px;
 
   &__why-choose-us {
     display: flex;
     flex-direction: column;
     margin-top: 35px;
-    width: 44%;
+    padding-top: 45px;
+    width: 55%;
   }
 
   &__title {
-    color: white;
+    color: #ffffff;
     font-family: Aleo, sans-serif;
-    font-size: 25px;
+    font-size: 36px;
     font-weight: 400;
     line-height: 26px;
   }
 
   &__description {
     color: #e8e8e8;
-    font-family: "Josefin Sans";
-    font-size: 9px;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 16px;
     font-weight: 400;
-    line-height: 18px;
-    letter-spacing: 1px;
-    margin-top: 18px;
-    padding-left: 2px;
-    width: 83%;
+    line-height: 26px;
+    letter-spacing: 1.6px;
+    margin-top: 34px;
+    margin-bottom: -8px;
+    width: 88%;
     word-spacing: 1px;
 
     &--second-p {
-      letter-spacing: 1px;
-      margin-top: 8px;
-      margin-bottom: 28px;
+      margin-top: 34px;
+      margin-bottom: 41px;
     }
   }
 
@@ -49,16 +49,18 @@
     background-color: #5474fd;
     border: none;
     color: #ffffff;
-    font-family: Aleo;
-    font-size: 10px;
+    font-family: Aleo, serif;
+    font-size: 16px;
     font-weight: 400;
-    line-height: 39px;
+    line-height: 26px;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 1.2px;
-    margin-left: 1px;
-    width: 36%;
+    margin-left: -2px;
+    padding-top: 19px;
+    padding-bottom: 16px;
+    width: 35.7%;
 
     &:hover {
       background-color: #496bfe;
@@ -68,13 +70,8 @@
   &__cities {
     display: flex;
     flex-direction: column;
-    grid-column-start: 2;
-    padding-left: 0;
-    padding-right: 4px;
-    padding-top: 2px;
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: 33%;
+    padding-left: 4px;
+    width: 41.5%;
   }
 
   img:first-of-type {

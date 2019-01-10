@@ -1,64 +1,99 @@
+@mixin step( $content, $color, $font-size ) {
+  content: $content;
+  font-family: "FontAwesome";
+  color: $color;
+  font-size: $font-size;
+}
+
 .steps {
   background-color: #333333;
-  padding-right: 205.828px;
-  padding-left: 211.828px;
   display: flex;
   justify-content: space-around;
-  padding-top: 39px;
-  padding-bottom: 58px;
+  padding-top: 79px;
+  padding-bottom: 100px;
+  padding-left: 12px;
 
   &:nth-child(2) {
     margin-left: 46px;
   }
 
   & > figure {
+    position: relative;
     text-align: center;
-    margin-top: 22px;
+    transition: all .3s cubic-bezier(.2, 0, 0, 1);
+    z-index: 1;
 
-    &::before {
-      transition: font-size 1s;
+    &::after {
+      content: "";
+      display: block;
+      background: white;
+      height: 0.001px;
+      position: absolute;
+      bottom: 0;
+      right: 3rem;
+      left: 3rem;
+      transition: all .3s cubic-bezier(.2, 0, 0, 1);
+      visibility: hidden;
+      z-index: -1;
     }
 
-    &:hover::before {
-      font-size: 100px;
+    &:hover {
+      &::after {
+        right: 0;
+        left: 0;
+        height: 100%;
+        visibility: visible;
+      }
+
+      & figcaption {
+        color: #333333;
+      }
     }
 
     & > figcaption {
       color: #e8e8e8;
-      font-family: Aleo;
-      font-size: 25px;
+      font-family: Aleo, sans-serif;
+      font-size: 36px;
       font-weight: 400;
       line-height: 36px;
     }
   }
 
-  &__search::before {
-    content: "\f002";
-    font-family: "FontAwesome";
-    color: #5474fd;
-    font-size: 44px;
+  &__search {
+    margin-right: 46px;
+    margin-left: 26px;
+  }
 
+  &__search::before {
+    @include step( "\f002", #5474fd, 58px );
+  }
+
+  &__select {
+    margin-left: 0;
   }
 
   &__select::before {
-    content: "\f05d";
-    font-family: "FontAwesome";
-    color: #ff6363;
-    font-size: 49px;
+    @include step( "\f05d", #ff6363, 69px );
+  }
+
+  &__enjoy {
+    margin-left: 0;
+    margin-top: 22px;
   }
 
   &__enjoy::before {
-    content: "\f087";
-    font-family: "FontAwesome";
-    font-size: 54px;
-    color: #00a2ff;
+    @include step( "\f087", #00a2ff, 64px );
   }
 
   &__select > figcaption {
-    margin-top: 8px;
+    margin-top: 22px;
   }
 
   &__search > figcaption {
-    margin-top: 13px;
+    margin-top: 33px;
+  }
+
+  &__enjoy > figcaption {
+    margin-top: 21px;
   }
 }
