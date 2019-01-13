@@ -179,6 +179,10 @@ body {
         line-height: 26px;
         text-transform: uppercase;
 
+        @media screen and (max-width: 1080px) {
+          font-size: 12px;
+        }
+
         &:last-child {
           margin-right: 0;
         }

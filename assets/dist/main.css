@@ -162,6 +162,11 @@ body {
   line-height: 26px;
   text-transform: uppercase;
 }
+@media screen and (max-width: 1080px) {
+  .header .nav__links > li {
+    font-size: 12px;
+  }
+}
 .header .nav__links > li:last-child {
   margin-right: 0;
 }
