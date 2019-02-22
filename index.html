@@ -75,19 +75,14 @@
         <a href="#">Book now</a>
     </div>
 </section>
-<section class="feedback">
-    <h3 class="feedback__title">What Our Tourist Say</h3>
-    <div class="feedback__item">
-        <img src="assets/images/visitor.png" alt="">
-        <div class="feedback__text">
-            <h4>Sam Sumon</h4>
-            <p>But I must explain to you how all this mistaken idea
+<section class="feedback" id="feedback" :style="{ backgroundImage: 'url(' + bgImage + ')' }">
+    <h3 class="feedback__title">{{title}}</h3>
+    <item image="assets/images/visitor.png" name="Sam Sumon" feedback="But I must explain to you how all this mistaken idea
                 of account to denouncinpleasure and praising pain But I must explain to you how all this mistaken idea
                 of account to nai denouncing pleasure and praising pain was account  born and I account will give you a
                 complete account of the system was account  born and I account will give you a nai the complete account
-                of the system</p>
-        </div>
-    </div>
+                of the system">
+    </item>
 </section>
 <section class="footer">
     <h1 class="footer__title">Bhromaon</h1>
@@ -99,6 +94,8 @@
     <a class="footer__social footer__social--pt" href="#"></a>
 </section>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="assets/dist/smooth-scrolling.js"></script>
+<script src="assets/dist/feedback.js"></script>
 </body>
 </html>
